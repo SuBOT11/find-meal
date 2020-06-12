@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/ca4814ad37.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Teko&family=Tenor+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>find Meal YO</title>
+  </head>
+  <body>
+    <div class="whole-wrapper">
+      <header>
+        <div class="heading">
+          <div class="brand">
+            <small>JanSu's</small>
+            <h2><span id="a">A</span><span id="n">n</span>y meal</h2>
+            <p>Complete meal in one search</p>
+          </div>
+          <div class="intro">
+            <p id="main">serve a meal for yourself in three easy steps</p>
+            <p id="one"><strong>1.</strong><a href="#"> Search </a></p>
+            <p id="two"><strong>2.</strong> Click the one you Picked</p>
+            <p id="three">
+              <strong>3.</strong> Get the details on ingredients and procedures
+            </p>
+            <p>That's it!! Off you go</p>
+          </div>
+        </div>
+        <nav id="search">
+          <h3>search under different categories</h3>
+          <small>search one</small>
+
+          <form>
+            <label for="byName"> By Name:</label>
+            <input type="text" name="byName" placeholder="e.g pizza" />
+            <label for="byFirstLetter">By first letter:</label>
+            <input
+              type="text"
+              name="byFirstLetter"
+              placeholder="e.g any letter"
+            />
+            <label for="byArea">
+              By area:
+            </label>
+            <input type="text" name="byArea" placeholder="eg japanese" />
+            <input type="submit" name="submit" id="submit" />
+          </form>
+        </nav>
+        <div class="random">
+          <h4>Not sure what to pick</h4>
+          <p>click to get a random meal</p>
+          <button id="random">find something</button>
+        </div>
+      </header>
+
+      <main>
+        <section class="displayNone" id="display">
+          <p>Everything we could find for <span id="found"></span></p>
+          <div class="resultWrapper"></div>
+        </section>
+
+        <section class="ingIns">
+          <div class="showMe">
+            <h2>Show me How</h2>
+            <p>click the picture to get sets of instructions and ingredients</p>
+          </div>
+          <div class="ingre">
+            <h4 style="text-transform: uppercase; margin-bottom: 20px;">
+              have these items ready
+            </h4>
+            <ul id="lists">
+              
+            </ul>
+          </div>
+          <div class="instructions">
+            <h1>Instructions</h1>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <a href="#top"><h3>new search</h3></a>
+      </footer>
+    </div>
+    <script src="app.js"></script>
+    <script src="jansu.js"></script>
+  </body>
+</html>

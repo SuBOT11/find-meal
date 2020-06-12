@@ -1,0 +1,256 @@
+:root {
+  /* font-family: 'Teko', sans-serif; */
+  font-family: "Tenor Sans", sans-serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+body {
+  background: #eee3bc;
+}
+.whole-wrapper {
+  max-width: 60vw;
+
+  position: absolute;
+  top: 0;
+  left: 20vw;
+}
+header {
+  height: auto;
+  width: 100%;
+}
+
+.brand {
+  margin-top: 20px;
+  height: 20vh;
+  text-align: center;
+}
+.brand h2 {
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.brand #a {
+  font-size: 5rem;
+}
+
+.brand small {
+  position: relative;
+  left: 110px;
+  top: -45px;
+}
+.brand p {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: rgba(20, 19, 19, 0.788);
+  letter-spacing: 2px;
+
+  transform: translateX(20px);
+  text-align: center;
+}
+
+.intro {
+  height: 40vh;
+  padding-left: 20px;
+  line-height: 30px;
+}
+.intro #main {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1rem;
+}
+.intro p {
+  color: rgba(3, 3, 3, 0.548);
+}
+#one,
+#two,
+#three {
+  text-align: left;
+}
+form {
+  height: 40vh;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+}
+#search h3 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+#search label {
+  margin-bottom: 10px;
+}
+#search input {
+  margin-bottom: 10px;
+  height: 50px;
+  border-radius: 10px;
+}
+.random {
+  height: 20vh;
+  margin-top: 10px;
+}
+.random h4 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.random p {
+  margin-bottom: 10px;
+}
+#display {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.displayNone {
+  display: none;
+}
+#display p {
+  margin-bottom: 10px;
+}
+#display span {
+  font-weight: bolder;
+}
+
+#img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#result {
+  max-width: 60vw;
+  box-sizing: border-box;
+
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 10px 10px 10px rgb(112, 106, 106);
+}
+#img:hover {
+  opacity: 0.5;
+}
+img {
+  max-height: 30vh;
+  max-width: 60vw;
+  border-radius: 10px;
+  display: block;
+}
+
+.resultWrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 10px 10px 10px rgb(158, 143, 143);
+  text-align: center;
+}
+#result {
+  margin-right: 10px;
+}
+.showMe {
+  height: 20vh;
+  margin: 10px 0 10px 0;
+}
+.showMe p {
+  margin: 10px 0 10px 0;
+}
+#submit {
+  width: 30%;
+}
+.ingre ul {
+  max-width: 100%;
+  list-style: none;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.ingre ul li {
+  width: auto;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background: rgba(150, 137, 137, 0.445);
+  height: 30px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+.instructions h1 {
+  margin-bottom: 20px;
+}
+.instructions div {
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+.instructions div br {
+  margin-bottom: 20px;
+}
+footer {
+  margin-top: 20px;
+}
+#random {
+  height: 40px;
+  border-radius: 5px;
+}
+.ingIns {
+  width: 60vw;
+  box-sizing: border-box;
+  padding: 0 20px 0 20px;
+
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 10px 10px 10px rgb(112, 106, 106);
+}
+@media screen and (max-width: 400px) {
+  .whole-wrapper {
+    max-width: 80vw;
+    position: absolute;
+    top: 0;
+    left: 5vw;
+  }
+  .brand {
+    height: 30vh;
+  }
+
+  .brand h2 {
+    font-size: 2rem;
+  }
+  .brand small {
+    position: relative;
+    top: 50px;
+    left: -20px;
+  }
+  .brand p {
+    font-size: 0.75rem;
+    text-transform: lowercase;
+  }
+  .intro {
+    height: 50vh;
+  }
+  .resultWrapper {
+    width: 86vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #result {
+    width: 100vw;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  #img {
+    width: 100%;
+  }
+  img {
+    width: 100%;
+  }
+  .ingIns {
+    width: 86vw;
+  }
+}
