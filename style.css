@@ -206,7 +206,7 @@ footer {
   background: rgba(255, 255, 255, 0.5);
   box-shadow: 10px 10px 10px rgb(112, 106, 106);
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .whole-wrapper {
     max-width: 80vw;
     position: absolute;
